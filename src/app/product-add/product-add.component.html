@@ -6,6 +6,8 @@
         <input type="text" class="form-control" 
           formControlName="ProductName" 
           #ProductName />
+
+          
       </div>
       <div *ngIf="angForm.controls['ProductName'].invalid && (angForm.controls['ProductName'].dirty || angForm.controls['ProductName'].touched)" class="alert alert-danger">
         <div *ngIf="angForm.controls['ProductName'].errors.required">
